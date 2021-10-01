@@ -13,11 +13,13 @@ let package = Package(
     targets: [
         .target(
             name: "KRActivityIndicatorView",
-            path: "KRActivityIndicatorView"
+            path: "KRActivityIndicatorView",
+            exclude: ["Info.plist"]
         ),
         .testTarget(
             name: "KRActivityIndicatorViewTests",
-            path: "KRActivityIndicatorViewTests"
+            path: "KRActivityIndicatorViewTests",
+            exclude: ["Info.plist"]
         ),
     ]
 )
